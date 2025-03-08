@@ -4,6 +4,7 @@ import './App.css'
 
 import Nav from './Component/Nav';
 import AllRoutes from './AllRoute/AllRoutes';
+import BlogList from './Component/BlogList';
 
 
 
@@ -15,6 +16,7 @@ function App() {
   
 
       <Nav/>
+      <BlogList/>
       <AllRoutes/>
       
         
