@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import {Box} from "@chakra-ui/react"
 import './index.css'
+import { useNavigate } from "react-router-dom";
 const ContactForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,6 +32,7 @@ const ContactForm = () => {
 
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "", phone: "" });
+      navigate("/")
     } catch (error) {
       alert("Something went wrong!");
     } finally {
