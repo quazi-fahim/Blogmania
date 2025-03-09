@@ -1,25 +1,16 @@
 
 
+import AllRoutes from './AllRoute/AllRoutes'
 import './App.css'
-
-import Nav from './Component/Nav';
-import AllRoutes from './AllRoute/AllRoutes';
-import BlogList from './Component/BlogList';
+import Nav from './Component/Nav'
 
 
 
 function App() {
-  
-
   return (
    <>
-  
-
-      <Nav/>
-      <BlogList/>
-      <AllRoutes/>
-      
-        
+   <Nav/>
+   <AllRoutes/>
    </>
   )
 }

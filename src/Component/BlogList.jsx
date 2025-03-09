@@ -126,12 +126,14 @@ const BlogList = () => {
                 borderRadius: "8px",
                 marginBottom: "15px",
                 background: "#f9f9f9",
+                color:"black",
+                
               }}
             >
-              <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+              <h3 style={{ fontSize: "18px", fontWeight: "bold",fontFamily:'Poppins' }}>
                 {blog.title}
               </h3>
-              <p style={{ fontSize: "14px", marginBottom: "10px" }}>
+              <p style={{ fontSize: "14px", marginBottom: "10px" ,fontfamily: 'Merriweather'}}>
                 {blog.body}
               </p>
               <p style={{ fontSize: "14px" }}>
@@ -183,17 +185,18 @@ const BlogList = () => {
                 margin: "5px",
                 cursor: "pointer",
                 borderRadius: "5px",
-                background: "white",
+                background: "#e0e0e0",
               }}
             >
               Previous
             </button>
             <span
               style={{
-                padding: "10px",
+                padding: "15px",
                 fontSize: "16px",
+                fontFamily:"bold",
                 borderRadius: "5px",
-                background: "white",
+                background: "#e0e0e0",
               }}
             >
               Page {currentPage} of {totalPages}
@@ -210,7 +213,7 @@ const BlogList = () => {
                 margin: "5px",
                 cursor: "pointer",
                 borderRadius: "5px",
-                background: "white",
+                background: "#e0e0e0",
               }}
             >
               Next

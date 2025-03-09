@@ -1,7 +1,9 @@
 import React from 'react'
 import ContactForm from '../Component/ContactForm'
-import BlogList from '../Component/BlogList'
+
 import { Route, Routes } from 'react-router-dom'
+import Home from '../Component/Home'
+import BlogList from '../Component/BlogList'
 
 const AllRoutes = () => {
   return (
@@ -9,8 +11,10 @@ const AllRoutes = () => {
    
     
     <Routes>
+    <Route path="/" element={< Home/>} />
       <Route path="/contactus" element={< ContactForm/>} />
-      <Route path="/bloglist" element={< BlogList/>} />
+      <Route path="/blogs" element={< BlogList/>} />
+     
       </Routes>
   </>
   )

@@ -29,7 +29,7 @@ const Nav = () => {
           fontWeight="bold"
           cursor="pointer"
           _hover={{ textDecoration: "underline", color: "gray.300" }}
-          onClick={() => navigate("/bloglist")}
+          onClick={() => navigate("/")}
           textAlign="center"
         >
           BlogMania
