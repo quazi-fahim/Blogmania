@@ -40,7 +40,7 @@ const BlogList = () => {
   }, []);
 
   // Get unique tags for filtering
-  const uniqueTags = Array.from(new Set(blogs.flatMap((blog) => blog.tags)));
+  const uniqueTags = [...new Set(blogs.map(blog => blog.tags).flat())];
 
   // Apply filters to blogs
   const filteredBlogs = blogs.filter((blog) => {
